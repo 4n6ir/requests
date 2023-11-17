@@ -1,6 +1,17 @@
 # requests
 
-#### AWS Lambda Layer for Python Library
+##### Cloud Development Kit (CDK) v2
+
+```python
+        region = Stack.of(self).region
+
+        requests = _lambda.LayerVersion.from_layer_version_arn(
+            self, 'requests',
+            layer_version_arn = 'arn:aws:lambda:'+region+':070176467818:layer:requests:1'
+        )
+```
+
+##### AWS Lambda Layer for Python Library
 
  1. ```cd bundle```
  2. ```mkdir python```
