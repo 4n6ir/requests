@@ -8,7 +8,7 @@ from requests.requests_stack import RequestsStack
 app = cdk.App()
 
 RequestsStack(
-    app, "RequestsStackUSE1",
+    app, 'RequestsStackUSE1',
     env = cdk.Environment(
         account = os.getenv('CDK_DEFAULT_ACCOUNT'),
         region = 'us-east-1'
@@ -19,7 +19,7 @@ RequestsStack(
 )
 
 RequestsStack(
-    app, "RequestsStackUSE2",
+    app, 'RequestsStackUSE2',
     env = cdk.Environment(
         account = os.getenv('CDK_DEFAULT_ACCOUNT'),
         region = 'us-east-2'
@@ -30,7 +30,7 @@ RequestsStack(
 )
 
 RequestsStack(
-    app, "RequestsStackUSW2",
+    app, 'RequestsStackUSW2',
     env = cdk.Environment(
         account = os.getenv('CDK_DEFAULT_ACCOUNT'),
         region = 'us-west-2'
