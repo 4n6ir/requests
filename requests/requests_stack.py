@@ -42,7 +42,8 @@ class RequestsStack(Stack):
                 _lambda.Runtime.PYTHON_3_8,
                 _lambda.Runtime.PYTHON_3_9,
                 _lambda.Runtime.PYTHON_3_10,
-                _lambda.Runtime.PYTHON_3_11
+                _lambda.Runtime.PYTHON_3_11,
+                _lambda.Runtime.PYTHON_3_12
             ],
             description = 'requests 2.31.0 (https://github.com/psf/requests)',
             layer_version_name = 'requests',
